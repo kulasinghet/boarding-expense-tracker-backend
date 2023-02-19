@@ -16,9 +16,9 @@ export class AppController {
     const paidRecord = await this.appService.createPaid(data);
 
     if (addRecord && paidRecord) {
-      return 'Success';
+      return 'Record added successfully';
     } else {
-      return 'Failed';
+      return 'Record not added';
     }
   }
 }
