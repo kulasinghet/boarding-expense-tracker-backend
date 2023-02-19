@@ -9,7 +9,7 @@ export class GoogleSheetsService {
   constructor() {
     // Load the credentials from the JSON key file
     const auth = new google.auth.GoogleAuth({
-      keyFile: '.credentials.json',
+      keyFile: './credentials.json',
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
