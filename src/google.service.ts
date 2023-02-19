@@ -4,12 +4,12 @@ import { google } from 'googleapis';
 @Injectable()
 export class GoogleSheetsService {
   private readonly auth: any;
-  private readonly sheets: any = '1NugX-fyWj2cntBkYId1Qx8tZda9hHVw97J2yPcmb4wc'
+  private readonly sheets: any = '1NugX-fyWj2cntBkYId1Qx8tZda9hHVw97J2yPcmb4wc';
 
   constructor() {
     // Load the credentials from the JSON key file
     const auth = new google.auth.GoogleAuth({
-      keyFile: './credentials.json',
+      keyFile: './src/credentials.json',
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
