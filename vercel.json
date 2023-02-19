@@ -1,7 +1,6 @@
 {
   "version": "1.0.0",
     "name": "boarding-finance",
-    "description": "boarding-finance",
   "builds": [
     {
       "src": "src/main.ts",
