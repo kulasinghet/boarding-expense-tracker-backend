@@ -16,7 +16,7 @@ let GoogleSheetsService = class GoogleSheetsService {
     constructor() {
         this.sheets = '1NugX-fyWj2cntBkYId1Qx8tZda9hHVw97J2yPcmb4wc';
         const auth = new googleapis_1.google.auth.GoogleAuth({
-            keyFile: './src/credentials.json',
+            keyFile: './config/credentials.json',
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         });
         const sheets = googleapis_1.google.sheets({
